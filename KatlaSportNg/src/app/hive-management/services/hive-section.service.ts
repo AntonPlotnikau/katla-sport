@@ -22,12 +22,6 @@ export class HiveSectionService {
   }
 
   setHiveSectionStatus(hiveSectionId: number, deletedStatus: boolean): Observable<Object> {
-<<<<<<< HEAD
-    return this.http.get<Object>(`${this.url}`);
-||||||| merged common ancestors
-    return null;
-=======
     return this.http.put<Object>(`${this.url}${hiveSectionId}/status/${deletedStatus}`, null);
->>>>>>> step10
   }
 }
