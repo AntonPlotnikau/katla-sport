@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HiveService } from '../services/hive.service';
 import { Hive } from '../models/hive';
-import { hostViewClassName } from '@angular/compiler';
 
 @Component({
   selector: 'app-hive-form',

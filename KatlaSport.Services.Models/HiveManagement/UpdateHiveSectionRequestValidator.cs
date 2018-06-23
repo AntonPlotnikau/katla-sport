@@ -15,6 +15,7 @@ namespace KatlaSport.Services.HiveManagement
         {
             RuleFor(r => r.Name).Length(4, 60);
             RuleFor(r => r.Code).Length(5);
+            RuleFor(r => r.StoreHiveId).GreaterThan(0);
         }
     }
 }
